@@ -22,4 +22,16 @@ $app->get('/', function() use($app) {
   return $app['twig']->render('index.twig');
 });
 
+$app->get('/testGet', function()
+{
+    echo '<h1>Hello testGet</h1>';
+});
+
+
+$app->get('/testPost', function()
+{
+    echo '<h1>Hello testPost</h1>';
+});
+
+
 $app->run();
