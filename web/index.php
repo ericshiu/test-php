@@ -24,13 +24,13 @@ $app->get('/', function() use($app) {
 
 $app->get('/testGet', function()
 {
-    echo '<h1>Hello testGet</h1>';
+  return  '<h1>Hello testGet</h1>';
 });
 
 
 $app->get('/testPost', function()
 {
-    echo '<h1>Hello testPost</h1>';
+  return  '<h1>Hello testPost</h1>';
 });
 
 
