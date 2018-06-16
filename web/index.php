@@ -33,5 +33,11 @@ $app->get('/testPost', function()
   return  '<h1>Hello testPost</h1>';
 });
 
+$app->post('/testPostJsonData', function()
+{
+  $postData = file_get_contents('php://input');
+  return  $postData;
+});
+
 
 $app->run();
